@@ -5,7 +5,7 @@ geral
 
 Por esse ser meu primeiro post, nada melhor que começar com o famoso para todo programador.
 ### O Meu Hello
-Primeiramente deixe me apresentar, Me chamo Rafael do Carmo da Silva, trabalho com TI há 15 anos, por anos trabalhei fazendo manutenção e instalação de computadores, redes e impressoras.
+Primeiramente deixe me apresentar, Me chamo **Rafael do Carmo da Silva**, trabalho com TI há 15 anos, por anos trabalhei fazendo manutenção e instalação de computadores, redes e impressoras.
 
 Estudo programação a muito tempo, porém somente utilizava como hobbie, comecei a estudar mais a fundo para mudar de carreira na pandemia.
 
