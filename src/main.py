@@ -2,9 +2,11 @@ from datetime import datetime
 from os import walk, stat, path, rename
 from operator import itemgetter
 from slugify import slugify
+from datetime import datetime
+
 import json
 
-FILE_ROOT = "posts"
+FILE_ROOT = "html/posts"
 
 def save_json(filePath, jsonDict) -> None:
     with open(filePath, "w+", encoding="utf-8") as f:
@@ -21,7 +23,6 @@ def list_files():
     for _, __, files in walk(FILE_ROOT):
         for file in files :
             if("md" in file):
-                create_time = stat(path.join(FILE_ROOT, file)).st_ctime
                 filename = clear_string(file)
                 
                 slug = slugify(filename)
@@ -33,8 +34,7 @@ def list_files():
                     file_read = f.readlines()
 
                 # item["created"] = str(datetime.fromtimestamp(create_time))
-                item["created"] = clear_string(file_read[0])
-                
+                item["created"] =   clear_string(file_read[0])
                 item["title"] = clear_string(file_read[1])
                 item["subtitle"] = clear_string(file_read[2])
                 item["subject"] = clear_string(file_read[3])
@@ -51,4 +51,4 @@ def list_files():
 if __name__ == '__main__':
     data = dict()
     data["posts"] = list_files()
-    save_json("posts.json",data)
+    save_json("html/posts.json",data)
