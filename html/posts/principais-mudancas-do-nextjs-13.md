@@ -1,4 +1,4 @@
-2023-09-12 12:20
+2023-09-15 15:30
 # Principais Mudanças do Nextjs 13
 ## Quais Mudanças que mudaram que vão afetar o uso do Nextjs 13?
 nextjs
